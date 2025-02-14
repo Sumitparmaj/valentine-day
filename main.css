@@ -1319,3 +1319,28 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }
+
+.valentine-message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff4d6d;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
